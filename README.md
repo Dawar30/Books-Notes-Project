@@ -97,8 +97,9 @@ Server will run at http://localhost:3000
 
 [Dawar Abbas]
 Full Stack Developer | Passionate about clean UI and seamless backend integration
-📧 your.email@example.com
+📧 meesumabbas891@.com
 
 🪪 License
 
 This project is licensed under the MIT License – feel free to use and modify.
+
