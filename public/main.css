@@ -1,0 +1,318 @@
+/* ===== HEADER ===== */
+.site-header {
+  background: #2a9d8f;
+  padding: 15px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: #264653;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+/* ===== AUTH FORMS (Register & Login) ===== */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Shared Button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #f4a261;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e76f51;
+}
+
+/* Switch Links */
+.switch-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.switch-link a {
+  color: #e76f51;
+  text-decoration: none;
+}
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* Password Toggle */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-wrapper input {
+  padding-right: 36px;
+}
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ===== BOOKS LIST PAGE ===== */
+.books-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-details {
+  padding: 15px;
+}
+
+.book-details h3 {
+  margin-bottom: 8px;
+  color: #2a9d8f;
+}
+
+/* Add Book Form Styling */
+.add-book-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-book-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.add-book-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.add-book-form input,
+.add-book-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+.add-book-form button {
+  width: 100%;
+  padding: 0.85rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-book-form button:hover {
+  background: #357abd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add-book-form {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.book-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.book-details-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.book-details-card img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-info h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.update-form {
+  margin-top: 2rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.update-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.update-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.update-form textarea,
+.update-form input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.update-form button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.update-form button:hover {
+  background: #005fa3;
+}
+
+.delete-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c9302c;
+}
+

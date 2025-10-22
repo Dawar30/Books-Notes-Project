@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="books-container">
+  <h2>Books Collection</h2>
+
+  <div class="books-grid">
+    <% if (books.length === 0) { %>
+      <p>No books added yet. <a href="/add">Add one here</a>.</p>
+    <% } %>
+
+    <% books.forEach(book => { %>
+      <a href="/books/<%= book.book_id %>" class="book-link">
+        <div class="book-card">
+          <img src="<%= book.cover_url %>" alt="<%= book.title %> cover">
+          <div class="book-details">
+            <h3><%= book.title %></h3>
+            <p><strong>Author:</strong> <%= book.author %></p>
+            <p><strong>Read By:</strong> <%= book.username %></p>
+            <p><strong>Recomendation:</strong> <%= book.rating %>/5</p>
+          </div>
+        </div>
+      </a>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); -%>
